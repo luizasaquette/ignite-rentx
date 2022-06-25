@@ -78,10 +78,7 @@
             }
         ],
         "prettier/prettier": [
-            "error",
-            {
-                "endOfLine": "off"
-            }
+            "error"
         ],
         "no-use-before-define": "off"
     },
