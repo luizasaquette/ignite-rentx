@@ -39,8 +39,8 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-        run: | 
-          cd ~/app/ignite-rentx
-          yarn
-          ./node_modules/.bin/typeorm migration:run
-          pm2 restart app-rentx
+          run: | 
+            cd ~/app/ignite-rentx
+            yarn
+            ./node_modules/.bin/typeorm migration:run
+            pm2 restart app-rentx
